@@ -1,0 +1,304 @@
+
+h2 {
+	color: #0C7489
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif
+}
+
+a {
+	color: #A3320B;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #A3320B;
+	text-decoration: none;
+}
+
+
+p {
+	/*color: rgb(230,230,230);*/
+  color: black;
+	font-weight: bold;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.body-box {
+  position: relative;
+  min-height: 50vh;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.title-page {
+  text-align: center;
+  border-radius: 5px;
+  background: rgb(70,70,90);
+  display:inline-block;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.content{
+	border: 3px;
+	background: rgb(70,70,90);
+	background-image: url(images/orange.jpg);
+	background-size: cover;
+	border-radius:5px;
+	padding: 15px;
+	margin: 10px;
+	box-shadow: 3px 3px 3px rgb(30,30,40);
+	text-align: center;
+	height: 200px;
+	position: relative;
+}
+
+.banner {
+	padding: 150px;
+	background-image: url(images/cactus.jpg);
+	background-position: bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+  text-align: center;
+}
+
+.banner h1 {
+	color: white;
+/*	text-align: center;
+  border-radius: 5px;
+  background: rgb(70,70,90);*/
+}
+
+.footer {
+	background: black;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	padding: 15px;
+	margin: 0 !important;
+}
+
+.content .badge{
+	position: absolute;
+	top: -10px;
+	right: -20px;
+	background: red;
+	border-radius: 50%;
+}
+
+.btn {
+	text-decoration: none;
+}
+
+button {
+  padding: 8px 20px;
+  color: white;
+  background-color: rgb(106,150,58);
+  border-radius: 5px;
+  border: none;
+  font-size:14px;
+}
+
+.avatar {
+	border-radius:50%;
+	width: 100px;
+	padding: 5px;
+	border: black;
+}
+
+.card {
+	height:250px;
+	color: yellow;
+	font-family: bold;
+	font-size: 30;
+	margin: 15px;
+	background: linear-gradient(135deg,
+   rgba(100, 200, 100, 0.8) 0%,
+   rgba(100, 200, 100, 0.3) 50%),
+	url("images/yellow.jpg");
+	background-size: cover;
+}
+
+.body-travel {
+  margin-left: 110px !important;
+  margin-right: 110px !important;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  /*border: 3px solid white;*/
+}
+
+.main {
+  display: flex;
+  overflow: hidden;
+  height: 50vw;
+  /*background: #333;*/
+}
+
+.main img {
+  max-width: 310px;
+  vertical-align: middle;
+  border: 2px solid white;
+  box-sizing: border-box;
+  transition: opacity .2s;
+}
+
+.main:hover img {
+  opacity: 0.5;
+}
+
+.main img:hover {
+  opacity: 1;
+}
+
+.main .single-column {
+ animation: var(--animation, none) 35s infinite linear;
+}
+
+.main .single-column:hover {
+ animation-play-state: paused;
+}
+
+.main .single-column:nth-of-type(odd) {
+  align-self: flex-end;
+  --direction: 50%;
+}
+
+@keyframes slide {
+  to {
+    -webkit-transform: translateY(var(--direction, -50%));
+            transform: translateY(var(--direction, -50%));
+  }
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  font-size: 30px ;
+  visibility: hidden;
+  width: 530px;
+  height: 440px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tabs label {
+  order: 1; // Put the labels first
+  display: block;
+  padding: 1rem 2rem;
+  margin-right: 0.1rem;
+  cursor: pointer;
+  background: #90CAF9;
+  font-weight: bold;
+  transition: background ease 0.2s;
+  margin-bottom: 0px !important;
+  border-radius: 5px 5px 0 0;
+}
+.tabs .tab {
+  order: 99; // Put the tabs last
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  background: #fff;
+}
+.tabs input[type="radio"] {
+  display: none;
+}
+.tabs input[type="radio"]:checked + label {
+  background: rgb(80,145,170);
+/*  border: blue 1px solid;*/
+}
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+
+
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+
+.tabs h1 {
+  font-size:25px;
+}
+
+
+body {
+  /*background: #eee;*/
+  background-color: rgb(50,50,70);
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  box-sizing: border-box;
+  /*padding-top: 10vh;*/
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 112%;
+}
+
+
