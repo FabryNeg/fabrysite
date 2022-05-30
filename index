@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content= "this is the line that should appear on google searchs">
+  <title>Fabrizio's page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="banner">
+    <h1 class="title-page"> <img src="images/fabrypic.jpg" class="avatar">Fabrizio's Page</h1>
+  </div>
+  <br>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <div class="content">
+          <span class="badge">NEW!</span>
+          <h2>HappyCamel</h2>
+          <p>My first game!</p>
+           <div class="popup" onclick="myFunction()"><button type="button" class="btn btn-warning"><a href="#"><i class="fas fa-horse-head"></i>&nbsp Play it!</a></button>
+            <span class="popuptext" id="myPopup"><img src="Images/Camel.PNG" alt="Camel" width=500px> <br>HappyCamel will soon be ready! <br> Under development ;)</span>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <div class="content">
+          <span class="badge">NEW!</span>
+          <h2>Curriculum</h2>
+          <p>My resume, my life!&nbsp</p>
+          <button type="button" class="btn btn-warning"><a href="curriculum.html"><i class="far fa-address-card"></i>&nbspCheck my CV!</a></button>
+        </div>
+      </div>
+      <br>
+
+      <div class="col-sm-6 col-md-6 col-lg-3">
+       <div class="content">
+        <span class="badge">NEW!</span>
+        <h2>Travels</h2>
+        <p>Exploring the world!</p>
+        <button type="button" class="btn btn-warning"><a href="travels.html"><i class="fas fa-camera-retro"></i>&nbsp Take a look!</a></button>
+      </div>
+    </div>
+    <br>
+
+    <div class="col-sm-6 col-md-6 col-lg-3">
+      <div class="content">
+        <span class="badge">NEW!</span>
+        <h2>Coding</h2>
+        <p>My learning efforts!</p>
+        <button type="button" class="btn btn-warning"><a href="coding.html"><i class="fas fa-code"></i></i>&nbsp Check my code!</a></button>
+      </div>
+    </div>
+    <br>
+  </div>
+</div>
+<br>
+<br>
+<div class="footer">
+  <p>If you want to contact me, feel free to send me an email or contact me through Facebook!</p>
+  <button type="button" class="btn btn-dark"><a href="https://www.facebook.com/fabrizio.negretti/"><i class="fab fa-facebook"></i>Facebook</a></button>
+  <button type="button" class="btn btn-dark"><a href="mailto:finalfabry@hotmail.it">&nbsp &nbsp<i class="fas fa-envelope"></i></i>Email &nbsp &nbsp</a></button>
+</div>
+<script>
+// When the user clicks on the game camel and catus receive a popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+</script>
+</body>
+</html>
+
